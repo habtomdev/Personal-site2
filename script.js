@@ -71,7 +71,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe elements for scroll animations
 document.addEventListener("DOMContentLoaded", () => {
     const animateElements = document.querySelectorAll(
-        ".about-content, .skills-grid, .projects-grid, .contact-content"
+        ".about-content, .hobbies-grid, .travel-grid, .skills-grid, .projects-grid, .contact-content"
     );
 
     animateElements.forEach((el) => {
@@ -95,6 +95,28 @@ document.querySelectorAll(".skill-item").forEach((item) => {
 document.querySelectorAll(".project-card").forEach((card) => {
     card.addEventListener("mouseenter", function () {
         this.style.transform = "translateY(-15px)";
+    });
+
+    card.addEventListener("mouseleave", function () {
+        this.style.transform = "translateY(0)";
+    });
+});
+
+// Hobby cards animation
+document.querySelectorAll(".hobby-card").forEach((card) => {
+    card.addEventListener("mouseenter", function () {
+        this.style.transform = "translateY(-8px)";
+    });
+
+    card.addEventListener("mouseleave", function () {
+        this.style.transform = "translateY(0)";
+    });
+});
+
+// Travel cards animation
+document.querySelectorAll(".travel-card").forEach((card) => {
+    card.addEventListener("mouseenter", function () {
+        this.style.transform = "translateY(-8px)";
     });
 
     card.addEventListener("mouseleave", function () {

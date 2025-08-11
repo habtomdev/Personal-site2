@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Me | Hab-Dev Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">{Hab}</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hobbies" class="nav-link">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#travel" class="nav-link">Travel</a>
+                    </li>
+                </ul>
+                <div class="theme-toggle">
+                    <button
+                        class="theme-toggle-btn"
+                        id="themeToggle"
+                        aria-label="Toggle dark mode"
+                    >
+                        <i class="fas fa-sun light-icon"></i>
+                        <i class="fas fa-moon dark-icon"></i>
+                    </button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm Habtom, a passionate web developer with
+                            experience in building modern web applications. I
+                            love solving problems and learning new technologies
+                        </p>
+                        <p>
+                            When I'm not coding, I enjoy Gaming, Movies and
+                            Hanging out with friends which helps me stay
+                            creative and balanced.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">1+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label"
+                                    >Projects Completed</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <img
+                                src="Profile.jpg"
+                                alt="Profile picture of Habtom"
+                                class="profile-image"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="hobbies">
+            <div class="container">
+                <h2 class="section-title">Hobbies & Interests</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Gaming</h3>
+                        <p>
+                            I love playing video games, especially strategy and
+                            RPG games. It helps me develop problem-solving
+                            skills and strategic thinking.
+                        </p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>Movies & TV Shows</h3>
+                        <p>
+                            I'm a huge fan of sci-fi, action, and thriller
+                            movies. I enjoy analyzing storytelling techniques
+                            and visual effects.
+                        </p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Socializing</h3>
+                        <p>
+                            I love hanging out with friends, sharing ideas, and
+                            building meaningful connections. It keeps me
+                            grounded and inspired.
+                        </p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Reading</h3>
+                        <p>
+                            I enjoy reading tech blogs, programming books, and
+                            science fiction novels to stay updated and expand my
+                            imagination.
+                        </p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Music</h3>
+                        <p>
+                            I listen to various genres while coding. Music helps
+                            me focus and creates the perfect atmosphere for
+                            creative work.
+                        </p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Fitness</h3>
+                        <p>
+                            I believe in maintaining a healthy lifestyle through
+                            regular exercise, which helps me stay energized and
+                            focused.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Section -->
+        <section id="travel" class="travel">
+            <div class="container">
+                <h2 class="section-title">Places I Want to Visit</h2>
+                <div class="travel-grid">
+                    <div class="travel-card">
+                        <div class="travel-image">
+                            <div class="travel-overlay">
+                                <div class="travel-info">
+                                    <h3>Japan</h3>
+                                    <p>Tokyo, Kyoto, Osaka</p>
+                                </div>
+                            </div>
+                            <img
+                                src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Japan"
+                                class="travel-img"
+                            />
+                        </div>
+                        <div class="travel-content">
+                            <h3>Japan</h3>
+                            <p>
+                                Experience the perfect blend of tradition and
+                                technology. From the bustling streets of Tokyo
+                                to the serene temples of Kyoto.
+                            </p>
+                            <div class="travel-tags">
+                                <span class="travel-tag">Technology</span>
+                                <span class="travel-tag">Culture</span>
+                                <span class="travel-tag">Food</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-card">
+                        <div class="travel-image">
+                            <div class="travel-overlay">
+                                <div class="travel-info">
+                                    <h3>Iceland</h3>
+                                    <p>Reykjavik, Golden Circle</p>
+                                </div>
+                            </div>
+                            <img
+                                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Iceland"
+                                class="travel-img"
+                            />
+                        </div>
+                        <div class="travel-content">
+                            <h3>Iceland</h3>
+                            <p>
+                                Witness the stunning Northern Lights, geothermal
+                                hot springs, and dramatic landscapes that look
+                                like another planet.
+                            </p>
+                            <div class="travel-tags">
+                                <span class="travel-tag">Nature</span>
+                                <span class="travel-tag">Adventure</span>
+                                <span class="travel-tag">Aurora</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-card">
+                        <div class="travel-image">
+                            <div class="travel-overlay">
+                                <div class="travel-info">
+                                    <h3>New Zealand</h3>
+                                    <p>Auckland, Queenstown</p>
+                                </div>
+                            </div>
+                            <img
+                                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="New Zealand"
+                                class="travel-img"
+                            />
+                        </div>
+                        <div class="travel-content">
+                            <h3>New Zealand</h3>
+                            <p>
+                                Explore the breathtaking landscapes that
+                                inspired Lord of the Rings, from fjords to
+                                mountains and pristine beaches.
+                            </p>
+                            <div class="travel-tags">
+                                <span class="travel-tag">Adventure</span>
+                                <span class="travel-tag">Nature</span>
+                                <span class="travel-tag">Hiking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-card">
+                        <div class="travel-image">
+                            <div class="travel-overlay">
+                                <div class="travel-info">
+                                    <h3>Switzerland</h3>
+                                    <p>Zurich, Interlaken</p>
+                                </div>
+                            </div>
+                            <img
+                                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Switzerland"
+                                class="travel-img"
+                            />
+                        </div>
+                        <div class="travel-content">
+                            <h3>Switzerland</h3>
+                            <p>
+                                Experience the majestic Swiss Alps, pristine
+                                lakes, and charming cities known for their
+                                precision and beauty.
+                            </p>
+                            <div class="travel-tags">
+                                <span class="travel-tag">Mountains</span>
+                                <span class="travel-tag">Skiing</span>
+                                <span class="travel-tag">Culture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; 2026 Hab. All rights reserved.</p>
+                    <p>Built with lots of ☕</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
