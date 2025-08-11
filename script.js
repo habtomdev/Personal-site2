@@ -128,8 +128,6 @@ document.querySelectorAll(".travel-card").forEach((card) => {
 const contactForm = document.querySelector(".contact-form");
 if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
         // Get form data
         const formData = new FormData(this);
         const name = formData.get("name");
@@ -139,31 +137,25 @@ if (contactForm) {
 
         // Simple validation
         if (!name || !email || !subject || !message) {
+            e.preventDefault();
             showNotification("Please fill in all fields", "error");
             return;
         }
 
         if (!isValidEmail(email)) {
+            e.preventDefault();
             showNotification("Please enter a valid email address", "error");
             return;
         }
 
-        // Simulate form submission
+        // Show loading state
         const submitBtn = this.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = "Sending...";
         submitBtn.disabled = true;
 
-        // Simulate API call
-        setTimeout(() => {
-            showNotification(
-                "Message sent successfully! I'll get back to you soon.",
-                "success"
-            );
-            this.reset();
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }, 2000);
+        // Form will submit to Formspree automatically
+        // We'll handle success/error via Formspree's response
     });
 }
 

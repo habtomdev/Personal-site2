@@ -286,5 +286,19 @@
         </footer>
 
         <script src="script.js"></script>
+        <script>
+            // Handle Formspree success/error responses
+            if (window.location.search.includes("submission-successful")) {
+                showNotification(
+                    "Message sent successfully! I'll get back to you soon.",
+                    "success"
+                );
+            } else if (window.location.search.includes("submission-failed")) {
+                showNotification(
+                    "Failed to send message. Please try again.",
+                    "error"
+                );
+            }
+        </script>
     </body>
 </html>

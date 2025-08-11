@@ -305,22 +305,22 @@
                                 <span>Addis Ababa, ET</span>
                             </div>
                         </div>
-                        <div class="social-links">
-                            <a href="https://github.com/habtomdev" class="social-link" target="_blank"
-                                ><i class="fab fa-github"></i
-                            ></a>
-                            <a href="https://www.linkedin.com/in/habtom23/" class="social-link" target="_blank"
-                                ><i class="fab fa-linkedin"></i
-                            ></a>
-                            <a href="https://x.com/Habtom2319" class="social-link" target="_blank"
-                                ><i class="fab fa-twitter"></i
-                            ></a>
-                            <a href="https://t.me/itsjustmehab" class="social-link" target="_blank"
-                                ><i class="fab fa-telegram"></i
-                            ></a>
-                        </div>
+                                                 <div class="social-links">
+                             <a href="https://github.com/habtomdev" class="social-link" target="_blank" rel="noopener"
+                                 ><i class="fab fa-github"></i
+                             ></a>
+                             <a href="https://www.linkedin.com/in/habtom23/" class="social-link" target="_blank" rel="noopener"
+                                 ><i class="fab fa-linkedin"></i
+                             ></a>
+                             <a href="https://x.com/Habtom2319" class="social-link" target="_blank" rel="noopener"
+                                 ><i class="fab fa-twitter"></i
+                             ></a>
+                             <a href="https://t.me/itsjustmehab" class="social-link" target="_blank" rel="noopener"
+                                 ><i class="fab fa-telegram"></i
+                             ></a>
+                         </div>
                     </div>
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formspree.io/f/mjkolkvp" method="POST">
                         <div class="form-group">
                             <input
                                 type="text"
@@ -376,5 +376,13 @@
         </footer>
 
         <script src="script.js"></script>
+        <script>
+            // Handle Formspree success/error responses
+            if (window.location.search.includes('submission-successful')) {
+                showNotification("Message sent successfully! I'll get back to you soon.", "success");
+            } else if (window.location.search.includes('submission-failed')) {
+                showNotification("Failed to send message. Please try again.", "error");
+            }
+        </script>
     </body>
 </html>
