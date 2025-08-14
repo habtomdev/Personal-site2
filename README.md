@@ -1,5 +1,7 @@
 # Hab-Dev Portfolio Website
 
+## I prepared this readme using Ai
+
 A sleek and modern portfolio website designed for web developers to showcase their work in the best way possible. Features minimal design, smooth animations, and responsive layout.
 
 ## 🚀 Features
