@@ -519,4 +519,21 @@ prefersDarkScheme.addEventListener("change", (e) => {
 // Initialize theme on page load
 document.addEventListener("DOMContentLoaded", initializeTheme);
 
+// Scroll arrow functionality
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollArrow = document.querySelector(".scroll-arrow");
+    if (scrollArrow) {
+        scrollArrow.addEventListener("click", () => {
+            // Scroll to the skills section (next section after hero)
+            const skillsSection = document.querySelector("#skills");
+            if (skillsSection) {
+                skillsSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        });
+    }
+});
+
 console.log("Portfolio website loaded successfully! 🚀");
