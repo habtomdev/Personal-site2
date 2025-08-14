@@ -63,7 +63,7 @@ body {
     padding: 0 20px;
 }
 
-/* Typography */
+/* font */
 h1,
 h2,
 h3,
@@ -357,7 +357,6 @@ h6 {
 .hero-image {
     background: var(--card-bg);
     border-radius: 20px;
-    padding: 2rem;
     box-shadow: 0 20px 40px var(--shadow-light);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -430,12 +429,54 @@ h6 {
     animation: bounce 2s infinite;
 }
 
+.profile-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .profile-image {
-    width: auto;
+    width: 350px;
     height: 400px;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px var(--shadow-light);
+    transition: all 0.3s ease;
+    border: 4px solid var(--card-bg);
+}
+
+.profile-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px var(--shadow-medium);
+}
+
+.profile-image-overlay {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.profile-badge {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 8px 25px var(--shadow-medium);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-badge i {
+    font-size: 1rem;
 }
 
 /* About Section */
@@ -500,7 +541,7 @@ h6 {
 .image-placeholder {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 20px;
     background: var(--gradient-primary);
     display: flex;
     align-items: center;
@@ -509,11 +550,11 @@ h6 {
     overflow: hidden;
 }
 
-.profile-image {
+.about-image .profile-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 /* Hobbies Section */
@@ -578,14 +619,16 @@ h6 {
     font-size: 0.95rem;
 }
 
-/* Travel Section */
-.travel {
-    padding: 100px 0;
-    background: var(--bg-secondary);
+/* Travel Section within Hobbies */
+.hobbies .travel-grid {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .travel-grid {
     display: grid;
+    padding-bottom: 100px;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
@@ -855,7 +898,7 @@ h6 {
 
 /* Certifications & CV Section */
 .certifications-cv {
-    padding: 100px 0;
+    /* padding: 100px 0; */
     background: var(--bg-primary);
 }
 
@@ -1357,6 +1400,16 @@ h6 {
         margin-bottom: 0.3rem;
     }
 
+    .profile-image {
+        width: 280px;
+        height: 320px;
+    }
+
+    .profile-badge {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
     .title {
         font-size: 1.5rem;
     }
@@ -1391,7 +1444,7 @@ h6 {
         gap: 1.5rem;
     }
 
-    .travel-grid {
+    .hobbies .travel-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
@@ -1494,6 +1547,16 @@ h6 {
         gap: 1.5rem;
     }
 
+    .profile-image {
+        width: 240px;
+        height: 280px;
+    }
+
+    .profile-badge {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
     .certification-card {
         padding: 1.5rem;
     }
@@ -1517,7 +1580,7 @@ h6 {
         gap: 1rem;
     }
 
-    .travel-grid {
+    .hobbies .travel-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }

@@ -525,7 +525,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (scrollArrow) {
         scrollArrow.addEventListener("click", () => {
             // Scroll to the skills section (next section after hero)
-            const skillsSection = document.querySelector("#skills");
+            const skillsSection = document.querySelector("#about");
             if (skillsSection) {
                 skillsSection.scrollIntoView({
                     behavior: "smooth",
