@@ -536,4 +536,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-console.log("Portfolio website loaded successfully! 🚀");
+// go to top button
+// Show button when user scrolls down
+window.onscroll = function() {
+  const btn = document.getElementById("goTopBtn");
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Scroll to top when button is clicked
+document.getElementById("goTopBtn").onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+
+console.log("My site has loaded succesfuly");

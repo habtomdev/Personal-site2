@@ -1294,6 +1294,26 @@ h6 {
     gap: 1rem;
 }
 
+#goTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 100;
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+#goTopBtn:hover {
+  background-color: #555;
+}
+
+
 /* Animations */
 @keyframes fadeInUp {
     from {
